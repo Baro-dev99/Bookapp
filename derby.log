@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Sun May 23 14:38:52 GMT+02:00 2021:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.11.1.2 - (1629631): instance a816c00e-0179-993c-38f0-000006995330 
+on database directory C:\Users\Walid\Documents\NetBeansProjects\bookapp20\database\bookdb20 with class loader sun.misc.Launcher$AppClassLoader@266474c2 
+Loaded from file:/C:/Program%20Files/Java/jdk1.8.0_144/db/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_161-b12
+user.dir=C:\Users\Walid\Documents\NetBeansProjects\bookapp20
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''

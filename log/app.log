@@ -1,0 +1,37 @@
+17-01-2020 19:00:05.639 WARN [SwingWorker-pool-2-thread-1] [bookapp20.gui.AddPublisherFrame] [doInBackground] [bookapp20.gui.AddPublisherFrame$SaveWorker.doInBackground(AddPublisherFrame.java:157)] - WARN
+java.sql.SQLIntegrityConstraintViolationException: The statement was aborted because it would have caused a duplicate key value in a unique or primary key constraint or unique index identified by 'SQL191226182715290' defined on 'PUBLISHER'.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(Unknown Source) ~[derby.jar:?]
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source) ~[derby.jar:?]
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source) ~[derby.jar:?]
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.handleException(Unknown Source) ~[derby.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleException(Unknown Source) ~[derby.jar:?]
+	at org.apache.derby.impl.jdbc.ConnectionChild.handleException(Unknown Source) ~[derby.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedStatement.executeStatement(Unknown Source) ~[derby.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeStatement(Unknown Source) ~[derby.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeLargeUpdate(Unknown Source) ~[derby.jar:?]
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeUpdate(Unknown Source) ~[derby.jar:?]
+	at bookapp20.controllers.PublisherController.create(PublisherController.java:51) ~[classes/:?]
+	at bookapp20.gui.AddPublisherFrame$SaveWorker.doInBackground(AddPublisherFrame.java:155) [classes/:?]
+	at bookapp20.gui.AddPublisherFrame$SaveWorker.doInBackground(AddPublisherFrame.java:144) [classes/:?]
+	at javax.swing.SwingWorker$1.call(SwingWorker.java:295) [?:1.8.0_181]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [?:1.8.0_181]
+	at javax.swing.SwingWorker.run(SwingWorker.java:334) [?:1.8.0_181]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_181]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_181]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_181]
+Caused by: org.apache.derby.impl.jdbc.EmbedSQLException: The statement was aborted because it would have caused a duplicate key value in a unique or primary key constraint or unique index identified by 'SQL191226182715290' defined on 'PUBLISHER'.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source) ~[derby.jar:?]
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.wrapArgsForTransportAcrossDRDA(Unknown Source) ~[derby.jar:?]
+	... 19 more
+Caused by: org.apache.derby.iapi.error.StandardException: The statement was aborted because it would have caused a duplicate key value in a unique or primary key constraint or unique index identified by 'SQL191226182715290' defined on 'PUBLISHER'.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby.jar:?]
+	at org.apache.derby.impl.sql.execute.IndexChanger.insertAndCheckDups(Unknown Source) ~[derby.jar:?]
+	at org.apache.derby.impl.sql.execute.IndexChanger.doInsert(Unknown Source) ~[derby.jar:?]
+	at org.apache.derby.impl.sql.execute.IndexChanger.insert(Unknown Source) ~[derby.jar:?]
+	at org.apache.derby.impl.sql.execute.IndexSetChanger.insert(Unknown Source) ~[derby.jar:?]
+	at org.apache.derby.impl.sql.execute.RowChangerImpl.insertRow(Unknown Source) ~[derby.jar:?]
+	at org.apache.derby.impl.sql.execute.InsertResultSet.normalInsertCore(Unknown Source) ~[derby.jar:?]
+	at org.apache.derby.impl.sql.execute.InsertResultSet.open(Unknown Source) ~[derby.jar:?]
+	at org.apache.derby.impl.sql.GenericPreparedStatement.executeStmt(Unknown Source) ~[derby.jar:?]
+	at org.apache.derby.impl.sql.GenericPreparedStatement.execute(Unknown Source) ~[derby.jar:?]
+	... 13 more
